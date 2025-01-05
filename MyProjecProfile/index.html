@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about" class="hero">
+        <div class="container">
+            <h1>About Me</h1>
+            <p class="lead">Welcome to my portfolio. My name is Phongpisuth Kenchat  <br> I'm a Software Engineering student at Burapha University.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Title</h3>
+                    <p>Description of the project goes here. This is a brief overview of what the project entails.</p>
+                    <a href="#" class="btn-small">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Title</h3>
+                    <p>Description of the project goes here. This is a brief overview of what the project entails.</p>
+                    <a href="#" class="btn-small">Learn More</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Title</h3>
+                    <p>Description of the project goes here. This is a brief overview of what the project entails.</p>
+                    <a href="#" class="btn-small">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Portfolio</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

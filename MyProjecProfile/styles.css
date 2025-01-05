@@ -1,0 +1,266 @@
+/* Base Styles */
+:root {
+    --primary-color: #6587A1;
+    --secondary-color: #CBDCED;
+    --text-color: #333;
+    --background-light: #fff;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    padding: 120px 0 60px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.btn.primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn.secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-small {
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 0;
+    background-color: var(--background-light);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: var(--transition);
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    height: 200px;
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 80px 0;
+    background-color: var(--secondary-color);
+}
+
+.contact-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero {
+        padding: 100px 0 40px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 200px;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
