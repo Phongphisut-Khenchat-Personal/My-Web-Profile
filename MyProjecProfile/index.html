@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <meta name="description" content="Portfolio of Phongphisut Khenchat - Software Engineering Student and Software Quality Assurance Specialist" />
+    <meta name="keywords" content="software engineering, frontend development, quality assurance, portfolio" />
+    <meta property="og:title" content="Phongphisut Khenchat - Portfolio" />
+    <meta property="og:description" content="Software Engineering Student and Software Quality Assurance Specialist" />
+    <meta property="og:type" content="website" />
+    <title>Phongphisut Khenchat - Portfolio</title>
 
     <!-- Google Fonts -->
     <link
@@ -22,240 +27,290 @@
   </head>
   <body>
     <header>
-        <nav class="container">
-          <div class="logo">Portfolio</div>
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
-      </header>
+      <nav class="container" aria-label="Main navigation">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+          <li><a href="#home" aria-label="Go to Home section">Home</a></li>
+          <li><a href="#about" aria-label="Go to About section">About</a></li>
+          <li><a href="#experience" aria-label="Go to Experience section">Experience</a></li>
+          <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
+          <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
 
+    <main>
       <section id="home" class="home">
         <div class="container">
-            <div class="home-content">
-                <div class="profile-image">
-                    <img src="Profile1.png" alt="Profile Picture">
-                </div>
-                <div class="profile-text">
-                    <span class="greeting">Hello, I'm</span>
-                    <h1 class="name">Phongphisut Khenchat</h1>
-                    <h2 class="role">Student</h2>
-                    <div class="profile-buttons">
-                        <a href="#" class="btn btn-outline">Download CV</a>
-                        <a href="#contact" class="btn btn-filled">Contact Info</a>
-                    </div>
-                </div>
+          <div class="home-content">
+            <div class="profile-image">
+              <img 
+                src="Profile.png" 
+                alt="Phongphisut Khenchat" 
+                loading="lazy" 
+                width="300" 
+                height="300"
+              />
             </div>
-        </div>
-    </section>
-
-    <section id="about" class="hero">
-      <div class="container">
-        <h1>About Me</h1>
-        <div class="about-content">
-          <div class="profile-image">
-            <img
-              src="Profile.png"
-              alt="Profile Picture"
-              class="rounded-image"
-            />
-          </div>
-          <div class="about-info">
-            <div class="info-cards">
-              <div class="info-card">
-                <i class="fas fa-award"></i>
-                <h3>Experience</h3>
-                <p class="specialization">Software Quality Assurance.   </p>
-              </div>
-              <div class="info-card">
-                <i class="fas fa-user-graduate"></i>
-                <h3>Education</h3>
-                <p class="degree">B.Eng. Candidate in Software Engineering (3rd year).</p>
-              </div>
-            </div>
-            <div class="about-description">
-              <p>
-                Currently studying at Burapha University, Faculty of Informatics, majoring in Software Engineering. I have experience in Software Quality Assurance and I am interested in Frontend Development. I am looking for an internship opportunity to gain more experience in the field of Software Development.
-              </p>
+            <div class="profile-text">
+              <span class="greeting">Hello, I'm</span>
+              <h1 class="name">Phongphisut Khenchat</h1>
+              <h2 class="role">Student</h2>
+              <div class="profile-buttons">
+                <div class="dropdown">
+                  <button class="btn btn-outline dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                    Download <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content" role="menu">
+                    <a href="#" class="dropdown-item" role="menuitem">CV</a>
+                    <a href="#" class="dropdown-item" role="menuitem">Resume</a>
+                  </div>
+                </div>
+                <a href="#contact" class="btn btn-filled">Contact Info</a>
+              </div>              
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Add this after the about section and before the projects section -->
-    <section id="experience" class="experience">
-      <div class="container">
-        <h2>Experience</h2>
-        <div class="skills-container">
-          <div class="skills-group">
-            <h3>Frontend Development</h3>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>HTML</h4>
-                  <span class="skill-level">Intermediate</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>CSS</h4>
-                  <span class="skill-level">Experienced</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>JavaScript</h4>
-                  <span class="skill-level">Basic</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>TypeScript</h4>
-                  <span class="skill-level">Basic</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="skills-group">
-            <h3>Backend Development</h3>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>MongoDB</h4>
-                  <span class="skill-level">Basic</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>Node.js</h4>
-                  <span class="skill-level">Basic</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>Express.js</h4>
-                  <span class="skill-level">Basic</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>Git</h4>
-                  <span class="skill-level">Basic</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills-group">
-            <h3>Tool</h3>
-            <div class="skills-grid">
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>figma</h4>
-                  <span class="skill-level">Intermediate</span>
-                </div>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-check-circle"></i>
-                <div class="skill-info">
-                  <h4>Canva</h4>
-                  <span class="skill-level">Intermediate</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
+      <section id="about" class="hero">
         <div class="container">
-          <h2>Projects</h2>
-          <div class="project-grid">
-            <div class="project-card">
-              <div class="project-image">
-                <img src="path/to/communication-app.jpg" alt="Communication App Interface">
-              </div>
-              <h3>Project One</h3>
-              <div class="project-buttons">
-                <a href="#" class="project-btn">Github</a>
-                <a href="#" class="project-btn">Live Demo</a>
-              </div>
+          <h2>About Me</h2>
+          <div class="about-content">
+            <div class="profile-image">
+              <img
+                src="Profile.png"
+                alt="Phongphisut Khenchat portrait"
+                class="rounded-image"
+                loading="lazy"
+                width="300"
+                height="300"
+              />
             </div>
-            
-            <div class="project-card">
-              <div class="project-image">
-                <img src="path/to/reminder-app.jpg" alt="Reminder App Interface">
+            <div class="about-info">
+              <div class="info-cards">
+                <div class="info-card">
+                  <i class="fas fa-award" aria-hidden="true"></i>
+                  <h3>Experience</h3>
+                  <p class="specialization">Software Quality Assurance</p>
+                </div>
+                <div class="info-card">
+                  <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                  <h3>Education</h3>
+                  <p class="degree">B.Eng. Candidate in Software Engineering (3rd year)</p>
+                </div>
               </div>
-              <h3>Project Two</h3>
-              <div class="project-buttons">
-                <a href="#" class="project-btn">Github</a>
-                <a href="#" class="project-btn">Live Demo</a>
-              </div>
-            </div>
-            
-            <div class="project-card">
-              <div class="project-image">
-                <img src="path/to/food-app.jpg" alt="Food Delivery App Interface">
-              </div>
-              <h3>Project Three</h3>
-              <div class="project-buttons">
-                <a href="#" class="project-btn">Github</a>
-                <a href="#" class="project-btn">Live Demo</a>
+              <div class="about-description">
+                <p>
+                  Currently studying at Burapha University, Faculty of Informatics, majoring in Software Engineering. 
+                  I have experience in Software Quality Assurance and I am interested in Frontend Development. 
+                  I am looking for an internship opportunity to gain more experience in the field of Software Development.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-    <!-- In your index.html, replace the existing contact section with: -->
-    <section id="contact">
-      <div class="container">
-        <div class="contact-header">
-          <h2>Contact Me</h2>
-        </div>
-        <div class="contact-container">
-          <div class="social-container">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <span>chokun0988@gmail.com</span>or
-              <span>65160231@go.buu.ac.th</span>
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2>Experience</h2>
+          <div class="skills-container">
+            <div class="skills-group">
+              <h3>Frontend Development</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>HTML</h4>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>CSS</h4>
+                    <span class="skill-level">Experienced</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>JavaScript</h4>
+                    <span class="skill-level">Basic</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>TypeScript</h4>
+                    <span class="skill-level">Basic</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <div class="social-icons">
-              <a href="https://www.facebook.com/phongphisut.khenchat" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="https://www.instagram.com/sho_phongphisut/?__pwa=1#" class="social-icon">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="https://github.com/Phongphisut-Khenchat-Personal" class="social-icon">
-                <i class="fab fa-github"></i>
-              </a>
+
+            <div class="skills-group">
+              <h3>Backend Development</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>MongoDB</h4>
+                    <span class="skill-level">Basic</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>Node.js</h4>
+                    <span class="skill-level">Basic</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>Express.js</h4>
+                    <span class="skill-level">Basic</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>Git</h4>
+                    <span class="skill-level">Basic</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-group">
+              <h3>Tools</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>Figma</h4>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <div class="skill-info">
+                    <h4>Canva</h4>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img 
+                  src="Profile.png" 
+                  alt="Communication App Interface"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Project One</h3>
+              <div class="project-buttons">
+                <a href="#" class="project-btn" aria-label="View Project One on Github">Github</a>
+                <a href="#" class="project-btn" aria-label="View Project One Demo">Live Demo</a>
+              </div>
+            </article>
+            
+            <article class="project-card">
+              <div class="project-image">
+                <img 
+                  src="Profile.png" 
+                  alt="Reminder App Interface"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Project Two</h3>
+              <div class="project-buttons">
+                <a href="#" class="project-btn" aria-label="View Project Two on Github">Github</a>
+                <a href="#" class="project-btn" aria-label="View Project Two Demo">Live Demo</a>
+              </div>
+            </article>
+            
+            <article class="project-card">
+              <div class="project-image">
+                <img 
+                  src="Profile.png" 
+                  alt="Food Delivery App Interface"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Project Three</h3>
+              <div class="project-buttons">
+                <a href="#" class="project-btn" aria-label="View Project Three on Github">Github</a>
+                <a href="#" class="project-btn" aria-label="View Project Three Demo">Live Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="contact-header">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="contact-container">
+            <div class="social-container">
+              <div class="contact-item">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span>chokun0988@gmail.com</span> or
+                <span>65160231@go.buu.ac.th</span>
+              </div>
+              
+              <div class="social-icons">
+                <a 
+                  href="https://www.facebook.com/phongphisut.khenchat" 
+                  class="social-icon"
+                  aria-label="Visit my Facebook profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a 
+                  href="https://www.instagram.com/sho_phongphisut/?__pwa=1#" 
+                  class="social-icon"
+                  aria-label="Visit my Instagram profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a 
+                  href="https://github.com/Phongphisut-Khenchat-Personal" 
+                  class="social-icon"
+                  aria-label="Visit my Github profile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="scripts.js"></script>
   </body>
