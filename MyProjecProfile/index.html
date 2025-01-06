@@ -1,104 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Your CSS -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
         <nav class="container">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+          <div class="logo">Portfolio</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
-    </header>
+      </header>
 
-    <section id="about" class="hero">
+      <section id="home" class="home">
         <div class="container">
-            <h1>About Me</h1>
-            <p class="lead">Welcome to my portfolio. My name is Phongpisuth Kenchat  <br> I'm a Software Engineering student at Burapha University.</p>
-            <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+            <div class="home-content">
+                <div class="profile-image">
+                    <img src="Profile.png" alt="Profile Picture">
+                </div>
+                <div class="profile-text">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1 class="name">Phongphisut Khenchat</h1>
+                    <h2 class="role">Student</h2>
+                    <div class="profile-buttons">
+                        <a href="#" class="btn btn-outline">Download CV</a>
+                        <a href="#contact" class="btn btn-filled">Contact Info</a>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="about" class="hero">
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="about-content">
+          <div class="profile-image">
+            <img
+              src="Profile.png"
+              alt="Profile Picture"
+              class="rounded-image"
+            />
+          </div>
+          <div class="about-info">
+            <div class="info-cards">
+              <div class="info-card">
+                <i class="fas fa-award"></i>
+                <h3>Experience</h3>
+                <p class="specialization">Software Quality Assurance.   </p>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-user-graduate"></i>
+                <h3>Education</h3>
+                <p class="degree">B.Eng. Candidate in Software Engineering (3rd year).</p>
+              </div>
+            </div>
+            <div class="about-description">
+              <p>
+                Currently studying at Burapha University, Faculty of Informatics, majoring in Software Engineering. I have experience in Software Quality Assurance and I am interested in Frontend Development. I am looking for an internship opportunity to gain more experience in the field of Software Development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add this after the about section and before the projects section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="skills-container">
+          <div class="skills-group">
+            <h3>Frontend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>HTML</h4>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>CSS</h4>
+                  <span class="skill-level">Experienced</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>JavaScript</h4>
+                  <span class="skill-level">Basic</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>TypeScript</h4>
+                  <span class="skill-level">Basic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills-group">
+            <h3>Backend Development</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>MongoDB</h4>
+                  <span class="skill-level">Basic</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>Node.js</h4>
+                  <span class="skill-level">Basic</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>Express.js</h4>
+                  <span class="skill-level">Basic</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>Git</h4>
+                  <span class="skill-level">Basic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <h3>Tool</h3>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>figma</h4>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-check-circle"></i>
+                <div class="skill-info">
+                  <h4>Canva</h4>
+                  <span class="skill-level">Intermediate</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project Title</h3>
-                    <p>Description of the project goes here. This is a brief overview of what the project entails.</p>
-                    <a href="#" class="btn-small">Learn More</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project Title</h3>
-                    <p>Description of the project goes here. This is a brief overview of what the project entails.</p>
-                    <a href="#" class="btn-small">Learn More</a>
-                </div>
-                <div class="project-card">
-                    <div class="project-image"></div>
-                    <h3>Project Title</h3>
-                    <p>Description of the project goes here. This is a brief overview of what the project entails.</p>
-                    <a href="#" class="btn-small">Learn More</a>
-                </div>
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="path/to/communication-app.jpg" alt="Communication App Interface">
+              </div>
+              <h3>Project One</h3>
+              <div class="project-buttons">
+                <a href="#" class="project-btn">Github</a>
+                <a href="#" class="project-btn">Live Demo</a>
+              </div>
             </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img src="path/to/reminder-app.jpg" alt="Reminder App Interface">
+              </div>
+              <h3>Project Two</h3>
+              <div class="project-buttons">
+                <a href="#" class="project-btn">Github</a>
+                <a href="#" class="project-btn">Live Demo</a>
+              </div>
+            </div>
+            
+            <div class="project-card">
+              <div class="project-image">
+                <img src="path/to/food-app.jpg" alt="Food Delivery App Interface">
+              </div>
+              <h3>Project Three</h3>
+              <div class="project-buttons">
+                <a href="#" class="project-btn">Github</a>
+                <a href="#" class="project-btn">Live Demo</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
+    <!-- In your index.html, replace the existing contact section with: -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-wrapper">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </form>
-            </div>
+      <div class="container">
+        <div class="contact-header">
+          <h2>Contact Me</h2>
         </div>
+        <div class="contact-container">
+          <div class="social-container">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>chokun0988@gmail.com</span>
+            </div>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 My Portfolio</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
