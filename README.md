@@ -53,12 +53,12 @@ Welcome to my personal portfolio website repository! This website showcases my s
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/personal-portfolio.git
+git clone https://github.com/Phongphisut-Khenchat-Personal/My-Web-Profile.git
 ```
 
 2. Navigate to the project directory:
 ```bash
-cd personal-portfolio
+cd MyProjecProfile
 ```
 
 3. Open `index.html` in your browser
@@ -74,8 +74,12 @@ personal-portfolio/
     ├── Profile/
     │   └── Profile.png
     └── Download/
-        ├── CV.pdf
-        └── Resume.pdf
+    │    ├── CV.pdf
+    │    └── Resume.pdf
+    └── Project/
+         ├── Pramern Project.png
+         ├── WMS Project.png
+         └── Web profile.png
 ```
 
 ## ⚡ Performance Optimizations
