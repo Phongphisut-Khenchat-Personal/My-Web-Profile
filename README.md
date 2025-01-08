@@ -74,8 +74,12 @@ personal-portfolio/
     ├── Profile/
     │   └── Profile.png
     └── Download/
-        ├── CV.pdf
-        └── Resume.pdf
+    │    ├── CV.pdf
+    │    └── Resume.pdf
+    └── Project/
+         ├── Pramern Project.png
+         ├── WMS Project.png
+         └── Web profile.png
 ```
 
 ## ⚡ Performance Optimizations
