@@ -53,7 +53,7 @@ Welcome to my personal portfolio website repository! This website showcases my s
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[your-username]/personal-portfolio.git
+git clone https://github.com/Phongphisut-Khenchat-Personal/My-Web-Profile.git
 ```
 
 2. Navigate to the project directory:
