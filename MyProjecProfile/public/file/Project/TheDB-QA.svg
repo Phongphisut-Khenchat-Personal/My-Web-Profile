@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" role="img" aria-label="TheDB-QA Dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134e4a"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="380" fill="url(#bg)"/>
+  <rect x="24" y="24" width="592" height="48" rx="8" fill="rgba(255,255,255,0.12)"/>
+  <rect x="40" y="40" width="120" height="16" rx="4" fill="rgba(255,255,255,0.35)"/>
+  <rect x="24" y="92" width="140" height="264" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <rect x="40" y="112" width="90" height="10" rx="3" fill="rgba(255,255,255,0.25)"/>
+  <rect x="40" y="136" width="108" height="10" rx="3" fill="rgba(255,255,255,0.18)"/>
+  <rect x="40" y="160" width="96" height="10" rx="3" fill="rgba(255,255,255,0.18)"/>
+  <rect x="180" y="92" width="436" height="120" rx="10" fill="rgba(255,255,255,0.12)"/>
+  <polyline points="200,180 250,140 310,160 370,110 430,130 490,90 560,120" fill="none" stroke="#fb923c" stroke-width="4" stroke-linecap="round"/>
+  <rect x="180" y="228" width="210" height="128" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <rect x="406" y="228" width="210" height="128" rx="10" fill="rgba(255,255,255,0.1)"/>
+  <text x="320" y="340" font-family="Arial,sans-serif" font-size="18" fill="rgba(255,255,255,0.7)" text-anchor="middle">TheDB-QA · Dashboard</text>
+</svg>

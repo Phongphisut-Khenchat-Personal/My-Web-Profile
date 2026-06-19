@@ -3,313 +3,517 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Phongphisut Khenchat - Software Engineering Student and Software Quality Assurance Specialist" />
-    <meta name="keywords" content="software engineering, frontend development, quality assurance, portfolio" />
-    <meta property="og:title" content="Phongphisut Khenchat - Portfolio" />
-    <meta property="og:description" content="Software Engineering Student and Software Quality Assurance Specialist" />
+    <meta
+      name="description"
+      content="Portfolio of Phongphisut Khenchat — Software Engineering Graduate seeking Associate Software Engineer and Software Developer positions."
+    />
+    <meta
+      name="keywords"
+      content="software engineer, web developer, Laravel, Vue.js, quality assurance, portfolio, Burapha University"
+    />
+    <meta property="og:title" content="Phongphisut Khenchat — Portfolio" />
+    <meta
+      property="og:description"
+      content="Software Engineering Graduate · Open to Opportunities · Web Development & Quality Assurance Experience"
+    />
     <meta property="og:type" content="website" />
-    <title>Phongphisut Khenchat - Portfolio</title>
+    <meta property="og:url" content="https://mywebprofile-9ee72.web.app/" />
+    <meta property="og:image" content="https://mywebprofile-9ee72.web.app/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Phongphisut Khenchat — Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Software Engineering Graduate · Open to Opportunities · Web Development & Quality Assurance Experience"
+    />
+    <meta name="twitter:image" content="https://mywebprofile-9ee72.web.app/assets/og-image.png" />
+    <title>Phongphisut Khenchat — Portfolio</title>
 
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./assets/og-image.png" />
 
-
-    <!-- Google icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Font Awesome -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
-
-    <!-- Your CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="container" aria-label="Main navigation">
-        <div class="logo">Portfolio</div>
-        <ul class="nav-links">
-          <li><a href="#home" aria-label="Go to Home section">Home</a></li>
-          <li><a href="#about" aria-label="Go to About section">About</a></li>
-          <li><a href="#experience" aria-label="Go to Experience section">Experience</a></li>
-          <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
-          <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
+    <header class="site-header" id="top">
+      <nav class="container nav" aria-label="Main navigation">
+        <a href="#top" class="nav-brand">PK<span>.</span></a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#education" data-i18n="nav.education">Education</a></li>
+          <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
-        <button class="hamburger" aria-label="menu" aria-expanded="false">
-          <span class="material-symbols-outlined">menu</span>
-        </button>
+
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="th" aria-pressed="false">TH</button>
+          </div>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </nav>
     </header>
 
     <main>
-      <section id="home" class="home">
-        <div class="container">
-          <div class="home-content">
-            <div class="profile-image">
-              <img 
-                src="./file/Profile/Profile.png" 
-                alt="Phongphisut Khenchat" 
-                loading="lazy" 
-                width="300" 
-                height="300"
-              />
+      <!-- Hero -->
+      <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-text reveal">
+            <span class="hero-badge" data-i18n="hero.badge">Open to Work</span>
+            <p class="hero-greeting" data-i18n="hero.greeting">Hello, I'm</p>
+            <h1 class="hero-name">Phongphisut Khenchat</h1>
+            <p class="hero-title" data-i18n="hero.title">
+              Software Engineering Graduate · Seeking Developer Role
+            </p>
+            <p class="hero-summary" data-i18n="hero.summary">
+              Actively looking for Associate Software Engineer and Software Developer
+              opportunities. Hands-on experience in web development, QA, and industry projects.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.contact">Contact Me</a>
+              <a href="./file/Download/Resume.pdf" class="btn btn-outline" download data-i18n="hero.download">
+                Download Resume
+              </a>
+              <a
+                href="#"
+                id="hero-linkedin"
+                class="btn btn-linkedin hidden"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.linkedin"
+                >LinkedIn</a
+              >
             </div>
-            <div class="profile-text">
-              <span class="greeting">Hello, I'm</span>
-              <h1 class="name">Phongphisut Khenchat</h1>
-              <h2 class="role">Student</h2>
-              <div class="profile-buttons">
-                <div class="dropdown">
-                  <button class="btn btn-outline dropdown-toggle" aria-haspopup="true" aria-expanded="false">
-                    Download <i class="fas fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content" role="menu">
-                    <a href="#" class="dropdown-item" role="menuitem">CV</a>
-                    <a href="#" class="dropdown-item" role="menuitem">Resume</a>                
-                </div>
-                </div>
-                <a href="#contact" class="btn btn-filled">Contact Info</a>
-              </div>              
+            <div class="hero-meta">
+              <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Chonburi, Thailand</span>
+              <span><i class="fas fa-graduation-cap" aria-hidden="true"></i> BUU · Graduated 2025</span>
+              <span><i class="fas fa-briefcase" aria-hidden="true"></i> <span data-i18n="hero.status">Available for hire</span></span>
+            </div>
+          </div>
+
+          <div class="hero-photo reveal">
+            <img
+              src="./assets/profile.png"
+              alt="Phongphisut Khenchat"
+              class="hero-profile-img"
+              width="420"
+              height="520"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section about">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="about.label">About Me</span>
+            <h2 data-i18n="about.heading">Who I Am</h2>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-cards reveal">
+              <article class="info-card">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                <h3 data-i18n="about.focus.title">Focus</h3>
+                <p data-i18n="about.focus.text">Web Development & Software QA</p>
+              </article>
+              <article class="info-card">
+                <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                <h3 data-i18n="about.education.title">Education</h3>
+                <p data-i18n="about.education.text">B.Sc. Software Engineering · GPA 2.98</p>
+              </article>
+              <article class="info-card">
+                <i class="fas fa-language" aria-hidden="true"></i>
+                <h3 data-i18n="about.language.title">Languages</h3>
+                <p data-i18n="about.language.text">Thai (Native) · English (Intermediate)</p>
+              </article>
+              <article class="info-card">
+                <i class="fas fa-bullseye" aria-hidden="true"></i>
+                <h3 data-i18n="about.goal.title">Goal</h3>
+                <p data-i18n="about.goal.text">Associate Software Engineer / Software Developer</p>
+              </article>
+            </div>
+
+            <div class="about-bio reveal">
+              <p data-i18n="about.bio1">
+                I am a Software Engineering graduate from Burapha University with practical
+                experience across industry collaboration projects and internship work. I enjoy
+                building responsive web applications, collaborating in teams, and delivering
+                reliable software with attention to quality.
+              </p>
+              <p data-i18n="about.bio2">
+                Skilled in JavaScript, PHP, Laravel, Vue.js, and SQL with experience in API
+                integration, UI/UX design, and quality assurance. I am a fast learner, ready to
+                grow in a professional development environment.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about" class="hero">
+      <!-- Education -->
+      <section id="education" class="section education">
         <div class="container">
-          <h2>About Me</h2>
-          <div class="about-content">
-            <div class="profile-image">
-              <img
-                src="./file/Profile/Profile.png"
-                alt="Phongphisut Khenchat portrait"
-                class="rounded-image"
-                loading="lazy"
-                width="300"
-                height="300"
-              />
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="education.label">Education</span>
+            <h2 data-i18n="education.heading">Academic Background</h2>
+          </header>
+
+          <article class="education-card reveal">
+            <div class="education-icon">
+              <i class="fas fa-university" aria-hidden="true"></i>
             </div>
-            <div class="about-info">
-              <div class="info-cards">
-                <div class="info-card">
-                  <i class="fas fa-award" aria-hidden="true"></i>
-                  <h3>Experience</h3>
-                  <p class="specialization">Software Quality Assurance</p>
+            <div class="education-content">
+              <div class="education-header">
+                <div>
+                  <h3 data-i18n="education.degree">Bachelor of Science in Software Engineering</h3>
+                  <p class="education-school" data-i18n="education.school">
+                    Burapha University · Faculty of Informatics
+                  </p>
                 </div>
-                <div class="info-card">
-                  <i class="fas fa-user-graduate" aria-hidden="true"></i>
-                  <h3>Education</h3>
-                  <p class="degree">B.Eng. Candidate in Software Engineering (3rd year)</p>
-                </div>
+                <span class="education-badge" data-i18n="education.graduated">Graduated</span>
               </div>
-              <div class="about-description">
-                <p>
-                  Currently studying at Burapha University, Faculty of Informatics, majoring in Software Engineering. 
-                  I have experience in Software Quality Assurance.I am looking for an internship opportunity to gain 
-                  more experience in the field of Software Development.
-                </p>
-              </div>
+              <ul class="education-details">
+                <li><strong data-i18n="education.period.label">Period:</strong> <span data-i18n="education.period.value">2022 — 2025</span></li>
+                <li><strong data-i18n="education.gpa.label">GPA:</strong> 2.98</li>
+                <li><strong data-i18n="education.focus.label">Focus:</strong> <span data-i18n="education.focus.value">Web Development, Software Engineering, Quality Assurance</span></li>
+              </ul>
+              <p class="education-note" data-i18n="education.note">
+                Completed industry collaboration projects and internship as part of the curriculum.
+              </p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section id="experience" class="experience">
+      <!-- Experience -->
+      <section id="experience" class="section experience">
         <div class="container">
-          <h2>Experience</h2>
-          <div class="skills-container">
-            <div class="skills-group">
-              <h3>Frontend Development</h3>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>HTML</h4>
-                    <span class="skill-level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>CSS</h4>
-                    <span class="skill-level">Experienced</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>JavaScript</h4>
-                    <span class="skill-level">Basic</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>TypeScript</h4>
-                    <span class="skill-level">Basic</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="experience.label">Experience</span>
+            <h2 data-i18n="experience.heading">Work & Projects</h2>
+          </header>
 
-            <div class="skills-group">
-              <h3>Backend Development</h3>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>MongoDB</h4>
-                    <span class="skill-level">Basic</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>Node.js</h4>
-                    <span class="skill-level">Basic</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>Express.js</h4>
-                    <span class="skill-level">Basic</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>Git</h4>
-                    <span class="skill-level">Basic</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="skills-group">
-              <h3>Tools</h3>
-              <div class="skills-grid">
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>Figma</h4>
-                    <span class="skill-level">Intermediate</span>
-                  </div>
-                </div>
-                <div class="skill-item">
-                  <i class="fas fa-check-circle" aria-hidden="true"></i>
-                  <div class="skill-info">
-                    <h4>Canva</h4>
-                    <span class="skill-level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="container">
-          <h2>Projects</h2>
-          <div class="project-grid">
-            <article class="project-card">
-              <div class="project-image">
-                <img 
-                  src="./file/Project/WMS Project.png" 
-                  alt="Communication App Interface"
-                  loading="lazy"
-                />
-              </div>
-              <h3>Warehouse Management</h3>
-              <div class="project-buttons">
-                <a href="https://github.com/BUUSE-CLUSTER-V" class="project-btn" aria-label="View Project One on Github">Github</a>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 — 2026</span>
+                <h3 data-i18n="exp1.title">Developer Engineer (Intern)</h3>
+                <p class="timeline-org">TheDB-QA System · aos.in.th</p>
+                <ul>
+                  <li data-i18n="exp1.b1">
+                    Developed frontend modules for an educational quality assurance system using
+                    HTML, CSS, JavaScript, Bootstrap, and Highcharts on CodeIgniter 3.
+                  </li>
+                  <li data-i18n="exp1.b2">
+                    Built a dynamic dashboard filtering system with real-time chart updates and
+                    search functionality.
+                  </li>
+                  <li data-i18n="exp1.b3">
+                    Built a full-stack collaboration network module using PHP, CodeIgniter 3, and
+                    OctoberCMS with CRUD operations via API.
+                  </li>
+                  <li data-i18n="exp1.b4">
+                    Conducted API testing with Postman and deployed updates via WinSCP.
+                  </li>
+                </ul>
               </div>
             </article>
-            
-            <article class="project-card">
-              <div class="project-image">
-                <img 
-                  src="./file/Project/Pramern Project.png" 
-                  alt="Reminder App Interface"
-                  loading="lazy"
-                />
-              </div>
-              <h3>PRAMERN</h3>
-              <div class="project-buttons">
-                <a href="https://github.com/Team-7-CASSIOPEIA" class="project-btn" aria-label="View Project Two on Github">Github</a>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024 — 2025</span>
+                <h3 data-i18n="exp2.title">Quality Engineer (Industry Project)</h3>
+                <p class="timeline-org">PRAMERN System · 92 TECH Co., Ltd.</p>
+                <ul>
+                  <li data-i18n="exp2.b1">
+                    Contributed to UX/UI design for web and mobile platforms with the team.
+                  </li>
+                  <li data-i18n="exp2.b2">
+                    Managed and prepared comprehensive requirement documents for stakeholders.
+                  </li>
+                  <li data-i18n="exp2.b3">
+                    Managed QA processes by reviewing and verifying documentation for compliance.
+                  </li>
+                </ul>
               </div>
             </article>
-            
-            <article class="project-card">
-              <div class="project-image">
-                <img 
-                  src="./file/Project/Web Profile.png" 
-                  alt="Food Delivery App Interface"
-                  loading="lazy"
-                />
-              </div>
-              <h3>My Web Profile</h3>
-              <div class="project-buttons">
-                <a href="https://github.com/Phongphisut-Khenchat-Personal/My-Web-Profile" class="project-btn" aria-label="View Project Three on Github">Github</a>
+
+            <article class="timeline-item reveal">
+              <div class="timeline-marker"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2023 — 2024</span>
+                <h3 data-i18n="exp3.title">Developer Engineer (Industry Project)</h3>
+                <p class="timeline-org">Warehouse Management System · TTT Brother Co., Ltd.</p>
+                <ul>
+                  <li data-i18n="exp3.b1">
+                    Gathered requirements and created detailed system diagrams for the project.
+                  </li>
+                  <li data-i18n="exp3.b2">
+                    Led the team in designing mockups and developing the complete front-end system.
+                  </li>
+                  <li data-i18n="exp3.b3">
+                    Guided team members in using Figma for design collaboration.
+                  </li>
+                </ul>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="contact">
+      <!-- Skills -->
+      <section id="skills" class="section skills">
         <div class="container">
-          <div class="contact-header">
-            <h2>Contact Me</h2>
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="skills.label">Skills</span>
+            <h2 data-i18n="skills.heading">Technical & Soft Skills</h2>
+            <p class="section-subtitle" data-i18n="skills.note">
+              The skills listed above reflect my current experience. I am ready to learn and adapt to
+              additional programming languages, frameworks, and technologies as required by the role.
+            </p>
+          </header>
+
+          <div class="skills-grid reveal">
+            <div class="skill-group">
+              <h3 data-i18n="skills.programming">Programming Languages</h3>
+              <div class="skill-tags">
+                <span>Java</span><span>JavaScript</span><span>PHP</span><span>SQL</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.frontend">Frontend</h3>
+              <div class="skill-tags">
+                <span>HTML</span><span>CSS</span><span>Vue.js</span><span>Bootstrap</span><span>Highcharts</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.backend">Backend / Frameworks</h3>
+              <div class="skill-tags">
+                <span>Laravel</span><span>CodeIgniter</span><span>OctoberCMS</span><span>Express.js</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.database">Database</h3>
+              <div class="skill-tags">
+                <span>MySQL</span><span>MongoDB</span><span>Firebase</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.tools">Tools</h3>
+              <div class="skill-tags">
+                <span>Git</span><span>Postman</span><span>Playwright</span><span>Figma</span><span>WinSCP</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 data-i18n="skills.soft">Soft Skills</h3>
+              <div class="skill-tags">
+                <span data-i18n="skills.teamwork">Teamwork</span>
+                <span data-i18n="skills.communication">Communication</span>
+                <span data-i18n="skills.critical">Critical Thinking</span>
+                <span data-i18n="skills.timemgmt">Time Management</span>
+              </div>
+            </div>
           </div>
-          <div class="contact-container">
-            <div class="social-container">
-              <div class="contact-item">
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="projects.label">Projects</span>
+            <h2 data-i18n="projects.heading">Selected Work</h2>
+          </header>
+
+          <div class="featured-header reveal">
+            <h3 data-i18n="projects.featured.title">Featured Projects</h3>
+            <p data-i18n="projects.featured.subtitle">Key work from internship, industry projects, and personal development</p>
+          </div>
+        </div>
+
+        <div class="project-carousel-wrap reveal">
+          <button type="button" class="carousel-btn carousel-btn--prev" id="featured-prev" aria-label="Previous featured project">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="project-carousel-viewport" id="featured-viewport">
+            <div class="project-carousel-track project-carousel-track--js" id="featured-track" aria-live="off"></div>
+          </div>
+          <button type="button" class="carousel-btn carousel-btn--next" id="featured-next" aria-label="Next featured project">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="marquee-header reveal">
+            <h3 data-i18n="projects.more.title">More on GitHub</h3>
+            <p data-i18n="projects.more.subtitle">Additional repositories and personal experiments</p>
+          </div>
+        </div>
+
+        <div class="project-carousel-wrap reveal">
+          <button type="button" class="carousel-btn carousel-btn--prev" id="marquee-prev" aria-label="Previous project">
+            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+          </button>
+          <div class="project-carousel-viewport" id="project-viewport">
+            <div class="project-carousel-track project-carousel-track--js" id="project-track" aria-live="off"></div>
+          </div>
+          <button type="button" class="carousel-btn carousel-btn--next" id="marquee-next" aria-label="Next project">
+            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="container">
+          <p class="carousel-hint" data-i18n="projects.marquee">Auto-scrolling — hover to pause</p>
+        </div>
+      </section>
+
+      <!-- Certificates -->
+      <section id="certificates" class="section certificates">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="certificates.label">Certificates</span>
+            <h2 data-i18n="certificates.heading">Credentials & Documents</h2>
+          </header>
+
+          <div class="cert-grid reveal">
+            <article class="cert-card">
+              <div class="cert-icon"><i class="fab fa-google" aria-hidden="true"></i></div>
+              <h3>Google Project Management</h3>
+              <p class="cert-meta">Coursera · Dec 2024</p>
+              <p data-i18n="cert.google.desc">
+                Professional Certificate — 6 courses covering traditional and agile project management.
+              </p>
+              <div class="cert-actions">
+                <a
+                  href="https://coursera.org/verify/professional-cert/VOSFDWC0H5EI"
+                  class="cert-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-i18n="cert.verify"
+                  >Verify</a
+                >
+                <a href="./file/Download/Certificate-Coursera.pdf" class="cert-link" download data-i18n="cert.download"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <div class="cert-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+              <h3>OSSD Boostcamp</h3>
+              <p class="cert-meta">Open Source Software Developers · 2024</p>
+              <p data-i18n="cert.ossd.desc">
+                Certificate from Open Source Software Developers Boostcamp program.
+              </p>
+              <div class="cert-actions">
+                <a href="./file/Download/Certificate-OSSD-Boostcamp.pdf" class="cert-link" download data-i18n="cert.download"
+                  >Download</a
+                >
+              </div>
+            </article>
+
+            <article class="cert-card cert-card--docs">
+              <div class="cert-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+              <h3 data-i18n="cert.docs.title">Documents</h3>
+              <p data-i18n="cert.docs.desc">Download my latest CV, resume, and academic transcript.</p>
+              <div class="doc-links">
+                <a href="./file/Download/CV.pdf" download><i class="fas fa-download" aria-hidden="true"></i> CV</a>
+                <a href="./file/Download/Resume.pdf" download><i class="fas fa-download" aria-hidden="true"></i> Resume</a>
+                <a href="./file/Download/Transcript.pdf" download
+                  ><i class="fas fa-download" aria-hidden="true"></i>
+                  <span data-i18n="cert.transcript">Transcript</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <header class="section-header reveal">
+            <span class="section-label" data-i18n="contact.label">Contact</span>
+            <h2 data-i18n="contact.heading">Let's Connect</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">
+              Open to Associate Software Engineer and Software Developer opportunities.
+            </p>
+          </header>
+
+          <div class="contact-grid reveal">
+            <div class="contact-info">
+              <a href="mailto:chokun0988@gmail.com" class="contact-item">
                 <i class="fas fa-envelope" aria-hidden="true"></i>
-                <span>chokun0988@gmail.com</span> or
-                <span>65160231@go.buu.ac.th</span>
+                <span>chokun0988@gmail.com</span>
+              </a>
+              <a href="tel:+66988729076" class="contact-item">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span>098-872-9076</span>
+              </a>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span data-i18n="contact.address">Bueng Sriracha, Chonburi 20230</span>
               </div>
-              
-              <div class="social-icons">
-                <a 
-                  href="https://www.facebook.com/phongphisut.khenchat" 
-                  class="social-icon"
-                  aria-label="Visit my Facebook profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                </a>
-                <a 
-                  href="https://www.instagram.com/sho_phongphisut/?__pwa=1#" 
-                  class="social-icon"
-                  aria-label="Visit my Instagram profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-instagram" aria-hidden="true"></i>
-                </a>
-                <a 
-                  href="https://github.com/Phongphisut-Khenchat-Personal" 
-                  class="social-icon"
-                  aria-label="Visit my Github profile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                </a>
-              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/Phongphisut-Khenchat-Personal" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+              <a
+                href="#"
+                id="contact-linkedin"
+                class="social-icon hidden"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.facebook.com/phongphisut.khenchat" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/sho_phongphisut/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 Phongphisut Khenchat</p>
+        <p data-i18n="footer.text">Built with HTML, CSS & JavaScript · Deployed on Firebase</p>
+      </div>
+    </footer>
 
     <script src="scripts.js"></script>
   </body>
