@@ -1129,14 +1129,19 @@ a.contact-item:hover {
   gap: 0.5rem;
 }
 
-/* Reveal animation */
+/* Reveal animation — only hide when JS is active */
 .reveal {
-  opacity: 0;
-  transform: translateY(24px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.reveal.visible {
+.js .reveal:not(.visible) {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.js .reveal.visible {
   opacity: 1;
   transform: translateY(0);
 }
