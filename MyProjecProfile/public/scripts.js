@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    "nav.about": "About",
+    "nav.about": "About me",
     "nav.education": "Education",
     "nav.experience": "Experience",
     "nav.skills": "Skills",
@@ -8,16 +8,16 @@ const translations = {
     "nav.certificates": "Certificates",
     "nav.contact": "Contact",
     "hero.badge": "Open to Opportunities",
-    "hero.greeting": "I am",
-    "hero.title": "Software Engineering Graduate · Seeking a Developer Position",
+    "hero.greeting": "Hi, I’m",
+    "hero.title": "A software engineering grad, looking for a developer role",
     "hero.summary":
-      "I am actively seeking opportunities as an Associate Software Engineer or Software Developer, with practical experience in web development, software quality assurance, and industry collaboration projects.",
-    "hero.contact": "Contact",
+      "I’m looking for an Associate Software Engineer or Software Developer job. I’ve built web apps, done QA, and worked on real company projects — happy to walk you through them below.",
+    "hero.contact": "Let’s talk",
     "hero.download": "Download Resume",
     "hero.linkedin": "LinkedIn",
-    "hero.status": "Available for employment",
-    "about.label": "About",
-    "about.heading": "Professional Summary",
+    "hero.status": "Ready to start work",
+    "about.label": "About me",
+    "about.heading": "Let me introduce myself",
     "about.focus.title": "Specialization",
     "about.focus.text": "Web Development & Software Quality Assurance",
     "about.education.title": "Education",
@@ -27,9 +27,9 @@ const translations = {
     "about.goal.title": "Career Objective",
     "about.goal.text": "Associate Software Engineer / Software Developer",
     "about.bio1":
-      "I am a Software Engineering graduate from Burapha University with practical experience in industry collaboration projects and professional internships. I am committed to developing responsive web applications, collaborating effectively within teams, and delivering reliable, quality-driven software solutions.",
+      "I graduated in Software Engineering from Burapha University. Along the way I interned and worked on industry projects — mostly building web apps, working with a team, and making sure the work was actually solid.",
     "about.bio2":
-      "I possess strong skills in JavaScript, PHP, Laravel, Vue.js, and SQL, along with experience in API integration, UI/UX design, and quality assurance. I am a dedicated learner and prepared to contribute and grow within a professional development environment.",
+      "I’m comfortable with JavaScript, PHP, Laravel, Vue.js, and SQL. I’ve also done API work, UI/UX, and QA. If a job uses something new, I’m happy to learn it.",
     "education.label": "Education",
     "education.heading": "Academic Background",
     "education.degree": "Bachelor of Science in Software Engineering",
@@ -61,9 +61,9 @@ const translations = {
     "exp3.b2": "Led the team in designing mockups and developing the complete front-end system.",
     "exp3.b3": "Guided team members in using Figma for design collaboration.",
     "skills.label": "Skills",
-    "skills.heading": "Technical & Soft Skills",
+    "skills.heading": "What I can work with",
     "skills.note":
-      "The skills listed above reflect my current experience. I am ready to learn and adapt to additional programming languages, frameworks, and technologies as required by the role.",
+      "This is what I’ve used so far — not a hard limit. If the job needs something new, I can learn it.",
     "skills.programming": "Programming Languages",
     "skills.frontend": "Frontend",
     "skills.backend": "Backend / Frameworks",
@@ -107,9 +107,25 @@ const translations = {
       "I welcome inquiries regarding Associate Software Engineer and Software Developer positions.",
     "contact.address": "Bueng Sriracha, Chonburi 20230, Thailand",
     "footer.text": "Developed with HTML, CSS, and JavaScript · Hosted on Firebase",
+    "intro.ep": "A quick hello",
+    "intro.title": "Nice to meet you",
+    "intro.line": "I’m Phongphisut — a new grad looking for my first full-time role.",
+    "intro.skip": "Skip intro",
+    "cover.ep": "Let’s start here.",
+    "ending.title": "Hope we get to work together.",
+    "guide.home": "Hey — scroll down and I’ll walk you through my work.",
+    "guide.about": "This page is just a short intro about who I am.",
+    "guide.education": "I graduated from Burapha University in 2025.",
+    "guide.experience": "I’ve interned and worked on three real company projects.",
+    "guide.skills": "These are tools I’ve used. I can pick up new ones too.",
+    "guide.projects": "Here are things I’ve built — swipe through if you like.",
+    "guide.certificates": "Certificates and files are here if you need them.",
+    "guide.contact": "If this looks like a fit, just send me a message.",
+    "guide.toggleOpen": "Show guide chat",
+    "guide.toggleClose": "Hide guide chat",
   },
   th: {
-    "nav.about": "เกี่ยวกับ",
+    "nav.about": "เกี่ยวกับผม",
     "nav.education": "การศึกษา",
     "nav.experience": "ประสบการณ์",
     "nav.skills": "ทักษะ",
@@ -118,15 +134,15 @@ const translations = {
     "nav.contact": "ติดต่อ",
     "hero.badge": "เปิดรับโอกาสการทำงาน",
     "hero.greeting": "สวัสดีครับ ผมชื่อ",
-    "hero.title": "บัณฑิตวิศวกรรมซอฟต์แวร์ · กำลังมองหาตำแหน่ง Software Developer",
+    "hero.title": "เพิ่งจบวิศวะซอฟต์แวร์ กำลังมองหางานสาย Developer อยู่ครับ",
     "hero.summary":
-      "ผมกำลังมองหาโอกาสในตำแหน่ง Associate Software Engineer และ Software Developer โดยมีประสบการณ์ปฏิบัติงานด้านการพัฒนาเว็บแอปพลิเคชัน การประกันคุณภาพซอฟต์แวร์ และโครงการร่วมมือกับภาคอุตสาหกรรม",
-    "hero.contact": "ติดต่อ",
+      "อยากสมัคร Associate Software Engineer หรือ Software Developer เคยทำเว็บ เคยทำ QA และเคยทำงานกับบริษัทจริง เลื่อนลงไปได้เลย ผมเล่าให้ฟังทีละหน้า",
+    "hero.contact": "คุยงานกัน",
     "hero.download": "ดาวน์โหลด Resume",
     "hero.linkedin": "LinkedIn",
-    "hero.status": "พร้อมเข้าทำงาน",
-    "about.label": "ข้อมูลส่วนตัว",
-    "about.heading": "ประวัติโดยสังเขป",
+    "hero.status": "พร้อมเริ่มงาน",
+    "about.label": "เกี่ยวกับผม",
+    "about.heading": "ขอเล่าเกี่ยวกับตัวผมก่อนนะครับ",
     "about.focus.title": "ความเชี่ยวชาญ",
     "about.focus.text": "การพัฒนาเว็บแอปพลิเคชัน และ Software Quality Assurance",
     "about.education.title": "การศึกษา",
@@ -136,9 +152,9 @@ const translations = {
     "about.goal.title": "เป้าหมายอาชีพ",
     "about.goal.text": "Associate Software Engineer / Software Developer",
     "about.bio1":
-      "ผมสำเร็จการศึกษาระดับปริญญาตรี สาขาวิศวกรรมซอฟต์แวร์ จากมหาวิทยาลัยบูรพา มีประสบการณ์จากโครงการร่วมมือกับภาคอุตสาหกรรมและการฝึกงาน โดยมุ่งเน้นการพัฒนาเว็บแอปพลิเคชันที่มีประสิทธิภาพ การทำงานร่วมกันเป็นทีม และการส่งมอบซอฟต์แวร์ที่มีคุณภาพ",
+      "ผมจบวิศวะซอฟต์แวร์จากมหาวิทยาลัยบูรพา ระหว่างเรียนได้ฝึกงานและทำโปรเจกต์กับบริษัทจริง ส่วนใหญ่เป็นงานเว็บ ทำงานเป็นทีม และทำให้ของที่ส่งไปใช้ได้จริง",
     "about.bio2":
-      "ผมมีความเชี่ยวชาญด้าน JavaScript, PHP, Laravel, Vue.js และ SQL รวมถึงการเชื่อมต่อ API การออกแบบ UI/UX และการประกันคุณภาพซอฟต์แวร์ พร้อมเรียนรู้และพัฒนาตนเองอย่างต่อเนื่องในสภาพแวดล้อมการทำงานจริง",
+      "ใช้เป็น JavaScript, PHP, Laravel, Vue.js กับ SQL รวมถึงต่อ API, ออกแบบ UI และทำ QA ถ้าที่ทำงานใช้เทคโนโลยีที่ยังไม่เคยจับ ผมเรียนเพิ่มได้ครับ",
     "education.label": "การศึกษา",
     "education.heading": "ประวัติการศึกษา",
     "education.degree": "วท.B. วิศวกรรมซอฟต์แวร์ (Software Engineering)",
@@ -170,9 +186,9 @@ const translations = {
     "exp3.b2": "นำทีมออกแบบ Mockup และพัฒนาระบบ Front-end ทั้งหมด",
     "exp3.b3": "ถ่ายทอดความรู้การใช้ Figma แก่สมาชิกในทีม เพื่อการออกแบบร่วมกันอย่างมีประสิทธิภาพ",
     "skills.label": "ทักษะ",
-    "skills.heading": "ทักษะด้านเทคนิคและทักษะเชิงบุคลิกภาพ",
+    "skills.heading": "สิ่งที่เคยใช้มา",
     "skills.note":
-      "ทักษะที่แสดงด้านล่างเป็นเพียงส่วนหนึ่งของประสบการณ์ปัจจุบัน ผมพร้อมเรียนรู้และปรับตัวกับภาษาโปรแกรม เฟรมเวิร์ก และเทคโนโลยีใหม่ ๆ ตามความต้องการของตำแหน่งงาน",
+      "อันนี้คือที่เคยทำจริงนะครับ ไม่ได้แปลว่าใช้ได้แค่นี้ ภาษาหรือเครื่องมือใหม่ตามงาน ผมพร้อมเรียน",
     "skills.programming": "ภาษาโปรแกรม",
     "skills.frontend": "Frontend",
     "skills.backend": "Backend / Frameworks",
@@ -216,6 +232,22 @@ const translations = {
       "ยินดีรับการติดต่อเกี่ยวกับตำแหน่ง Associate Software Engineer และ Software Developer",
     "contact.address": "ตำบลบึงศรีราชา อำเภอศรีราชา จังหวัดชลบุรี 20230",
     "footer.text": "พัฒนาด้วย HTML, CSS และ JavaScript · โฮสต์บน Firebase",
+    "intro.ep": "ขอทักทายสั้น ๆ",
+    "intro.title": "ยินดีที่ได้รู้จักครับ",
+    "intro.line": "ผมชื่อพงศ์พิสุทธิ์ เพิ่งจบ กำลังหางานประจำอยู่",
+    "intro.skip": "ข้าม Intro",
+    "cover.ep": "เริ่มที่หน้านี้เลยครับ",
+    "ending.title": "ถ้าโอเค คุยงานกันได้เลยนะครับ",
+    "guide.home": "เลื่อนลงมาได้เลย ผมเล่าให้ฟังทีละหน้านะครับ",
+    "guide.about": "หน้านี้คือแนะนำตัวสั้น ๆ",
+    "guide.education": "จบจากมหาลัยบูรพา ปี 2025 ครับ",
+    "guide.experience": "เคยฝึกงานกับทำโปรเจกต์บริษัทจริงมาสามที่",
+    "guide.skills": "อันนี้คือที่เคยใช้ อย่างอื่นก็เรียนเพิ่มได้",
+    "guide.projects": "งานที่เคยทำ เลื่อนดูได้เลย",
+    "guide.certificates": "ใบเซอร์กับไฟล์ดาวน์โหลดอยู่ตรงนี้",
+    "guide.contact": "ถ้าสนใจ คุยงานกันได้เลยครับ",
+    "guide.toggleOpen": "เปิดแชทแนะนำ",
+    "guide.toggleClose": "ปิดแชทแนะนำ",
   },
 };
 
@@ -249,6 +281,12 @@ function setLanguage(lang) {
 
   updateProjectDescriptions();
   initLinkedIn();
+  setGuide(activeChapter);
+  const toggle = document.getElementById("guide-toggle");
+  if (toggle) {
+    const open = toggle.getAttribute("aria-expanded") !== "false";
+    toggle.setAttribute("aria-label", t(open ? "guide.toggleClose" : "guide.toggleOpen"));
+  }
 }
 
 function initLinkedIn() {
@@ -271,7 +309,7 @@ function initLinkedIn() {
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
+hamburger?.addEventListener("click", () => {
   const isOpen = navLinks.classList.toggle("active");
   hamburger.classList.toggle("active", isOpen);
   hamburger.setAttribute("aria-expanded", isOpen);
@@ -280,14 +318,15 @@ hamburger.addEventListener("click", () => {
 
 document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-    hamburger.classList.remove("active");
-    hamburger.setAttribute("aria-expanded", "false");
+    navLinks?.classList.remove("active");
+    hamburger?.classList.remove("active");
+    hamburger?.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
   });
 });
 
 document.addEventListener("click", (e) => {
+  if (!hamburger || !navLinks) return;
   if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
     navLinks.classList.remove("active");
     hamburger.classList.remove("active");
@@ -301,13 +340,31 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
   btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
 });
 
-// Smooth scroll
+// Chapter lock — frame each page in the center of the screen
+function replayChapter(el) {
+  if (!el) return;
+  el.classList.remove("in-view");
+  void el.offsetWidth;
+  el.classList.add("seen", "in-view");
+}
+
+function lockToChapter(target, instant = false) {
+  if (!target) return;
+  const alreadyHere = target.classList.contains("in-view");
+  const top = Math.round(window.scrollY + target.getBoundingClientRect().top);
+  window.scrollTo({ top, behavior: instant ? "auto" : "smooth" });
+  if (alreadyHere || instant) replayChapter(target);
+}
+
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (e) => {
-    const target = document.querySelector(anchor.getAttribute("href"));
+    const href = anchor.getAttribute("href");
+    if (!href || href === "#") return;
+    const target = document.querySelector(href);
     if (!target) return;
     e.preventDefault();
-    target.scrollIntoView({ behavior: "smooth" });
+    lockToChapter(target);
+    history.replaceState(null, "", href);
   });
 });
 
@@ -754,6 +811,103 @@ setTimeout(() => {
 }, 1500);
 
 initLinkedIn();
+
+let activeChapter = "home";
+
+function t(key) {
+  return translations[currentLang]?.[key] || "";
+}
+
+function setGuideChat(open) {
+  const guide = document.getElementById("story-guide");
+  const toggle = document.getElementById("guide-toggle");
+  const avatar = document.getElementById("guide-avatar");
+  if (!guide || !toggle || !avatar) return;
+  guide.classList.toggle("is-closed", !open);
+  toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  toggle.setAttribute("aria-label", t(open ? "guide.toggleClose" : "guide.toggleOpen"));
+  avatar.src = open ? avatar.dataset.open : avatar.dataset.closed;
+  localStorage.setItem("pk-guide-open", open ? "1" : "0");
+}
+
+function initGuideToggle() {
+  const toggle = document.getElementById("guide-toggle");
+  if (!toggle) return;
+  const open = localStorage.getItem("pk-guide-open") !== "0";
+  setGuideChat(open);
+  toggle.addEventListener("click", () => {
+    const next = toggle.getAttribute("aria-expanded") !== "true";
+    setGuideChat(next);
+  });
+}
+
+function setGuide(chapter) {
+  if (!chapter) return;
+  activeChapter = chapter;
+  const line = document.getElementById("guide-line");
+  const key = `guide.${chapter}`;
+  if (line && t(key)) line.textContent = t(key);
+
+  document.querySelectorAll(".chapter-rail a").forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.chapter === chapter);
+  });
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    const href = link.getAttribute("href") || "";
+    link.classList.toggle("is-active", href === `#${chapter}` || (chapter === "home" && href === "#home"));
+  });
+}
+
+function finishIntro() {
+  document.documentElement.classList.add("intro-done");
+  document.body.classList.add("intro-done");
+  sessionStorage.setItem("pk-intro-done", "1");
+  document.body.style.overflow = "";
+  const hash = location.hash.slice(1);
+  const target = document.getElementById(hash) || document.getElementById("home");
+  lockToChapter(target, true);
+}
+
+function initCinematic() {
+  const cinematic = document.getElementById("cinematic");
+  const skip = document.getElementById("skip-intro");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!cinematic) return;
+  if (document.documentElement.classList.contains("intro-done") || reduce) {
+    finishIntro();
+    return;
+  }
+  document.body.style.overflow = "hidden";
+  skip?.addEventListener("click", finishIntro);
+  window.setTimeout(finishIntro, 7800);
+}
+
+function initChapters() {
+  const spreads = document.querySelectorAll(".spread[data-chapter]");
+  if (!spreads.length) return;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          replayChapter(entry.target);
+        } else {
+          entry.target.classList.remove("in-view");
+          entry.target.classList.add("seen");
+        }
+      });
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!visible) return;
+      setGuide(visible.target.dataset.chapter);
+    },
+    { threshold: 0.45 }
+  );
+  spreads.forEach((el) => observer.observe(el));
+}
+
+initCinematic();
+initChapters();
+initGuideToggle();
 
 // Init
 setLanguage(currentLang);
