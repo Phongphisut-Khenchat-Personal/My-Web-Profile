@@ -16,6 +16,8 @@ const translations = {
     "hero.download": "Download Resume",
     "hero.linkedin": "LinkedIn",
     "hero.status": "Ready to start work",
+    "hero.cardHint": "Drag to rotate · Or use the arrow keys",
+    "hero.cardAlt": "3D employee ID card of Phongphisut Khenchat",
     "about.label": "About me",
     "about.heading": "Let me introduce myself",
     "about.focus.title": "Specialization",
@@ -141,6 +143,8 @@ const translations = {
     "hero.download": "ดาวน์โหลด Resume",
     "hero.linkedin": "LinkedIn",
     "hero.status": "พร้อมเริ่มงาน",
+    "hero.cardHint": "ลากเพื่อหมุนบัตร · หรือใช้ปุ่มลูกศร",
+    "hero.cardAlt": "บัตรพนักงาน 3 มิติของพงศ์พิสุทธิ์ เขนชาติ",
     "about.label": "เกี่ยวกับผม",
     "about.heading": "ขอเล่าเกี่ยวกับตัวผมก่อนนะครับ",
     "about.focus.title": "ความเชี่ยวชาญ",
@@ -277,6 +281,10 @@ function setLanguage(lang) {
     const isActive = btn.dataset.lang === lang;
     btn.classList.toggle("active", isActive);
     btn.setAttribute("aria-pressed", isActive);
+  });
+
+  ["employee-id", "employee-id-poster"].forEach((id) => {
+    document.getElementById(id)?.setAttribute("alt", t("hero.cardAlt"));
   });
 
   updateProjectDescriptions();

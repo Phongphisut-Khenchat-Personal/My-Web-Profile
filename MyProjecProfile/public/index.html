@@ -48,7 +48,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css?v=11" />
+    <link rel="stylesheet" href="/styles.css?v=12" />
   </head>
   <body>
     <a class="skip-link" href="#home">Skip to content</a>
@@ -172,8 +172,42 @@
           </div>
         </div>
         <div class="cover-right">
-          <figure class="cover-mascot">
-            <img src="/assets/mascot-cover.png?v=8" alt="Phongphisut Khenchat" width="420" height="560" />
+          <figure class="cover-id">
+            <model-viewer
+              id="employee-id"
+              src="/assets/employee-id.glb?v=1"
+              poster="/assets/employee-id-poster.png?v=1"
+              alt="3D employee ID card of Phongphisut Khenchat"
+              camera-controls
+              disable-zoom
+              disable-pan
+              touch-action="pan-y"
+              interaction-prompt="none"
+              camera-target="0m 0.5m 0m"
+              camera-orbit="12deg 86deg 2.35m"
+              min-camera-orbit="auto 70deg 2.35m"
+              max-camera-orbit="auto 105deg 2.35m"
+              field-of-view="30deg"
+              min-field-of-view="30deg"
+              max-field-of-view="30deg"
+              environment-image="neutral"
+              shadow-intensity="0"
+              exposure="1"
+              loading="eager"
+              reveal="auto"
+            >
+              <img
+                id="employee-id-poster"
+                class="cover-id__poster"
+                slot="poster"
+                src="/assets/employee-id-poster.png?v=1"
+                alt="Employee ID card of Phongphisut Khenchat"
+                width="840"
+                height="1050"
+                fetchpriority="high"
+              />
+            </model-viewer>
+            <figcaption class="cover-id__hint" data-i18n="hero.cardHint">Drag to rotate · Or use the arrow keys</figcaption>
           </figure>
         </div>
       </section>
@@ -495,6 +529,7 @@
       </div>
     </footer>
 
-    <script src="/scripts.js?v=11"></script>
+    <script src="/scripts.js?v=12"></script>
+    <script type="module" src="/employee-id.js?v=1"></script>
   </body>
 </html>

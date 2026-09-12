@@ -30,7 +30,7 @@ Personal portfolio website showcasing academic background, internship experience
 
 - **Bilingual UI** — English / Thai toggle with `localStorage` persistence
 - **Responsive design** — optimized for desktop, tablet, and mobile (min. 16px font size)
-- **Hero section** — professional introduction with transparent graduation photo
+- **Hero section** — interactive 3D employee ID with a transparent background and image fallback
 - **Education & Experience** — timeline layout with internship and industry project details
 - **Skills** — technical and soft skills with adaptability note for new technologies
 - **Project carousels** — featured work and GitHub repositories with auto-scroll
@@ -117,6 +117,8 @@ npx serve .
 ```
 
 Then open `http://localhost:3000` in your browser.
+
+The hero includes a local GLB model and a vendored model-viewer runtime. See [the model export guide](tools/README.md) to regenerate the card from Blender.
 
 > **Note:** Open via a local server rather than double-clicking `index.html` so asset paths resolve correctly.
 
