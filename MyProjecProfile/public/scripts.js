@@ -9,10 +9,11 @@ const translations = {
     "nav.contact": "Contact",
     "hero.badge": "Open to Opportunities",
     "hero.greeting": "Hi, I’m",
-    "hero.title": "A software engineering grad, looking for a developer role",
+    "hero.title": "Looking for an opportunity to start my career",
     "hero.summary":
-      "I’m looking for an Associate Software Engineer or Software Developer job. I’ve built web apps, done QA, and worked on real company projects — happy to walk you through them below.",
+      "I’m applying for Software Engineer, Software Developer, Tester, or other roles I can contribute to — scroll down to see my work.",
     "hero.contact": "Let’s talk",
+    "hero.projects": "View projects",
     "hero.download": "Download Resume",
     "hero.linkedin": "LinkedIn",
     "hero.status": "Ready to start work",
@@ -21,17 +22,22 @@ const translations = {
     "about.label": "About me",
     "about.heading": "Let me introduce myself",
     "about.focus.title": "Specialization",
-    "about.focus.text": "Web Development & Software Quality Assurance",
+    "about.focus.item1": "Web Development",
+    "about.focus.item2": "Software Quality Assurance",
     "about.education.title": "Education",
-    "about.education.text": "B.Sc. Software Engineering · GPA 2.98",
+    "about.education.item1": "B.Sc. Software Engineering",
+    "about.education.item2": "GPA 2.98",
     "about.language.title": "Languages",
-    "about.language.text": "Thai (Native) · English (Intermediate — technical reading)",
+    "about.language.item1": "Thai (Native)",
+    "about.language.item2": "English (Intermediate — technical reading)",
     "about.goal.title": "Career Objective",
-    "about.goal.text": "Associate Software Engineer / Software Developer",
+    "about.goal.item1": "Full-Stack Developer",
+    "about.goal.item2": "Software Tester",
+    "about.goal.item3": "Open to the right opportunity",
     "about.bio1":
-      "I graduated in Software Engineering from Burapha University. Along the way I interned and worked on industry projects — mostly building web apps, working with a team, and making sure the work was actually solid.",
+      "I graduated in Software Engineering from Burapha University. Over about 9 months of internships and collaboration with software house companies, I helped build and maintain both small and large systems — and learned how teams deliver real work and solve problems day to day.",
     "about.bio2":
-      "I’m comfortable with JavaScript, PHP, Laravel, Vue.js, and SQL. I’ve also done API work, UI/UX, and QA. If a job uses something new, I’m happy to learn it.",
+      "I’m interested in both software development and software quality assurance — such as QA/Testing or other related roles. If a workplace uses technology I haven’t used before, I’m ready to learn it as well, and I’ll deliver quality work on time.",
     "education.label": "Education",
     "education.heading": "Academic Background",
     "education.degree": "Bachelor of Science in Software Engineering",
@@ -83,7 +89,7 @@ const translations = {
       "Selected work from internships, industry collaboration projects, and independent development",
     "projects.more.title": "Additional Projects on GitHub",
     "projects.more.subtitle": "Supplementary repositories and technical practice projects",
-    "projects.marquee": "Auto-scrolling — use arrows or hover to pause",
+    "projects.marquee": "Auto-scrolling — use arrows, hover, or keyboard focus to pause",
     "proj.wms.desc":
       "Industry collaboration project — front-end development, requirements analysis, and team leadership with Figma.",
     "proj.pramern.desc":
@@ -102,11 +108,11 @@ const translations = {
     "cert.download": "Download",
     "cert.docs.title": "Documents",
     "cert.docs.desc": "Download my latest curriculum vitae, resume, and academic transcript.",
-    "cert.transcript": "Academic Transcript",
+    "cert.transcript": "Transcript",
     "contact.label": "Contact",
     "contact.heading": "Contact Information",
     "contact.subtitle":
-      "I welcome inquiries regarding Associate Software Engineer and Software Developer positions.",
+      "I welcome inquiries about Software Engineer, Software Developer, Tester, and other related opportunities.",
     "contact.address": "Bueng Sriracha, Chonburi 20230, Thailand",
     "footer.text": "Developed with HTML, CSS, and JavaScript · Hosted on Firebase",
     "intro.ep": "A quick hello",
@@ -120,7 +126,8 @@ const translations = {
     "guide.education": "I graduated from Burapha University in 2025.",
     "guide.experience": "I’ve interned and worked on three real company projects.",
     "guide.skills": "These are tools I’ve used. I can pick up new ones too.",
-    "guide.projects": "Here are things I’ve built — swipe through if you like.",
+    "guide.projects": "Here are four projects I want you to see first.",
+    "guide.more-projects": "More practice and side projects live on GitHub below.",
     "guide.certificates": "Certificates and files are here if you need them.",
     "guide.contact": "If this looks like a fit, just send me a message.",
     "guide.toggleOpen": "Show guide chat",
@@ -136,10 +143,11 @@ const translations = {
     "nav.contact": "ติดต่อ",
     "hero.badge": "เปิดรับโอกาสการทำงาน",
     "hero.greeting": "สวัสดีครับ ผมชื่อ",
-    "hero.title": "เพิ่งจบวิศวะซอฟต์แวร์ กำลังมองหางานสาย Developer อยู่ครับ",
+    "hero.title": "กำลังมองหาโอกาสในการเริ่มต้นทำงาน",
     "hero.summary":
-      "อยากสมัคร Associate Software Engineer หรือ Software Developer เคยทำเว็บ เคยทำ QA และเคยทำงานกับบริษัทจริง เลื่อนลงไปได้เลย ผมเล่าให้ฟังทีละหน้า",
+      "อยากสมัครตำแหน่ง Software Engineer, Software Developer, Tester หรือบทบาทอื่นที่คิดว่าผมทำได้ — เลื่อนลงไปดูผลงานได้เลยครับ",
     "hero.contact": "คุยงานกัน",
+    "hero.projects": "ดูโปรเจกต์",
     "hero.download": "ดาวน์โหลด Resume",
     "hero.linkedin": "LinkedIn",
     "hero.status": "พร้อมเริ่มงาน",
@@ -148,20 +156,25 @@ const translations = {
     "about.label": "เกี่ยวกับผม",
     "about.heading": "ขอเล่าเกี่ยวกับตัวผมก่อนนะครับ",
     "about.focus.title": "ความเชี่ยวชาญ",
-    "about.focus.text": "การพัฒนาเว็บแอปพลิเคชัน และ Software Quality Assurance",
+    "about.focus.item1": "การพัฒนาเว็บแอปพลิเคชัน",
+    "about.focus.item2": "Software Quality Assurance",
     "about.education.title": "การศึกษา",
-    "about.education.text": "วท.B. วิศวกรรมซอฟต์แวร์ · GPA 2.98",
+    "about.education.item1": "วท.บ. วิศวกรรมซอฟต์แวร์",
+    "about.education.item2": "GPA 2.98",
     "about.language.title": "ภาษา",
-    "about.language.text": "ภาษาไทย (เจ้าของภาษา) · ภาษาอังกฤษ (ระดับปานกลาง — อ่านเอกสารทางเทคนิคได้)",
+    "about.language.item1": "ภาษาไทย (เจ้าของภาษา)",
+    "about.language.item2": "ภาษาอังกฤษ (ระดับปานกลาง — อ่านเอกสารทางเทคนิคได้)",
     "about.goal.title": "เป้าหมายอาชีพ",
-    "about.goal.text": "Associate Software Engineer / Software Developer",
+    "about.goal.item1": "Full-Stack Developer",
+    "about.goal.item2": "Software Tester",
+    "about.goal.item3": "และแล้วแต่โอกาสช่วงนั้น",
     "about.bio1":
-      "ผมจบวิศวะซอฟต์แวร์จากมหาวิทยาลัยบูรพา ระหว่างเรียนได้ฝึกงานและทำโปรเจกต์กับบริษัทจริง ส่วนใหญ่เป็นงานเว็บ ทำงานเป็นทีม และทำให้ของที่ส่งไปใช้ได้จริง",
+      "ผมจบ Software Engineering จากมหาวิทยาลัยบูรพา ระหว่างฝึกงานและทำงานร่วมกับบริษัท Software House รวมประมาณ 9 เดือน ได้มีโอกาสพัฒนาและดูแลทั้งระบบขนาดเล็กและขนาดใหญ่ รวมถึงเรียนรู้การทำงานเป็นทีม การส่งมอบงานจริง และการแก้ปัญหาในสถานการณ์จริง",
     "about.bio2":
-      "ใช้เป็น JavaScript, PHP, Laravel, Vue.js กับ SQL รวมถึงต่อ API, ออกแบบ UI และทำ QA ถ้าที่ทำงานใช้เทคโนโลยีที่ยังไม่เคยจับ ผมเรียนเพิ่มได้ครับ",
+      "ผมสนใจทั้งสายงานด้านการพัฒนาซอฟต์แวร์ และสายงานด้านการประกันคุณภาพซอฟต์แวร์ด้วยครับ เช่น QA/Testing หรือตำแหน่งอื่น ๆ หากที่ทำงานใช้เทคโนโลยีที่ตัวผมยังไม่เคยใช้ ผมก็พร้อมเรียนเพิ่มเติมเช่นกัน และจะตั้งใจส่งมอบงานที่มีคุณภาพตรงเวลาครับ",
     "education.label": "การศึกษา",
     "education.heading": "ประวัติการศึกษา",
-    "education.degree": "วท.B. วิศวกรรมซอฟต์แวร์ (Software Engineering)",
+    "education.degree": "วท.บ. วิศวกรรมซอฟต์แวร์ (Software Engineering)",
     "education.school": "มหาวิทยาลัยบูรพา · คณะวิทยาการสารสนเทศ",
     "education.graduated": "สำเร็จการศึกษา",
     "education.period.label": "ระยะเวลาการศึกษา",
@@ -210,7 +223,7 @@ const translations = {
       "ผลงานที่คัดสรรจากการฝึกงาน โครงการร่วมมือภาคอุตสาหกรรม และการพัฒนาด้วยตนเอง",
     "projects.more.title": "โครงการเพิ่มเติมบน GitHub",
     "projects.more.subtitle": "Repository เพิ่มเติมและโครงการฝึกฝนทักษะ",
-    "projects.marquee": "เลื่อนอัตโนมัติ — ใช้ปุ่มลูกศรหรือวางเมาส์เพื่อหยุดชั่วคราว",
+    "projects.marquee": "เลื่อนอัตโนมัติ — ใช้ปุ่มลูกศร วางเมาส์ หรือโฟกัสคีย์บอร์ดเพื่อหยุดชั่วคราว",
     "proj.wms.desc":
       "โครงการร่วมมือภาคอุตสาหกรรม — รับผิดชอบพัฒนา Front-end วิเคราะห์ความต้องการ และนำทีมด้วย Figma",
     "proj.pramern.desc":
@@ -229,11 +242,11 @@ const translations = {
     "cert.download": "ดาวน์โหลด",
     "cert.docs.title": "เอกสาร",
     "cert.docs.desc": "ดาวน์โหลด Curriculum Vitae, Resume และ Transcript ฉบับล่าสุด",
-    "cert.transcript": "ใบแสดงผลการศึกษา",
+    "cert.transcript": "Transcript",
     "contact.label": "ติดต่อ",
     "contact.heading": "ช่องทางการติดต่อ",
     "contact.subtitle":
-      "ยินดีรับการติดต่อเกี่ยวกับตำแหน่ง Associate Software Engineer และ Software Developer",
+      "ยินดีรับการติดต่อเกี่ยวกับตำแหน่ง Software Engineer, Software Developer, Tester และโอกาสอื่นที่เกี่ยวข้อง",
     "contact.address": "ตำบลบึงศรีราชา อำเภอศรีราชา จังหวัดชลบุรี 20230",
     "footer.text": "พัฒนาด้วย HTML, CSS และ JavaScript · โฮสต์บน Firebase",
     "intro.ep": "ขอทักทายสั้น ๆ",
@@ -247,7 +260,8 @@ const translations = {
     "guide.education": "จบจากมหาลัยบูรพา ปี 2025 ครับ",
     "guide.experience": "เคยฝึกงานกับทำโปรเจกต์บริษัทจริงมาสามที่",
     "guide.skills": "อันนี้คือที่เคยใช้ อย่างอื่นก็เรียนเพิ่มได้",
-    "guide.projects": "งานที่เคยทำ เลื่อนดูได้เลย",
+    "guide.projects": "สี่โปรเจกต์ที่อยากให้ดูก่อนอยู่ตรงนี้ครับ",
+    "guide.more-projects": "โปรเจกต์ฝึกฝนอื่น ๆ อยู่บน GitHub ด้านล่างครับ",
     "guide.certificates": "ใบเซอร์กับไฟล์ดาวน์โหลดอยู่ตรงนี้",
     "guide.contact": "ถ้าสนใจ คุยงานกันได้เลยครับ",
     "guide.toggleOpen": "เปิดแชทแนะนำ",
@@ -262,7 +276,7 @@ const SITE_CONFIG = {
   linkedin: "https://www.linkedin.com/in/phongphisut-khenchat-a4673a402/",
 };
 
-const FEATURED_IDS = ["thedb", "wms", "pramern", "wangngan", "all-work"];
+const FEATURED_IDS = ["wangngan", "all-work", "web-profile", "worktrack"];
 
 function setLanguage(lang) {
   if (!translations[lang]) return;
@@ -283,13 +297,12 @@ function setLanguage(lang) {
     btn.setAttribute("aria-pressed", isActive);
   });
 
-  ["employee-id", "employee-id-poster"].forEach((id) => {
-    document.getElementById(id)?.setAttribute("alt", t("hero.cardAlt"));
-  });
+  document.getElementById("employee-id")?.setAttribute("alt", t("hero.cardAlt"));
+  document.getElementById("employee-id-poster")?.setAttribute("alt", t("hero.cardAlt"));
 
   updateProjectDescriptions();
   initLinkedIn();
-  setGuide(activeChapter);
+  setGuide(activeSection);
   const toggle = document.getElementById("guide-toggle");
   if (toggle) {
     const open = toggle.getAttribute("aria-expanded") !== "false";
@@ -348,22 +361,6 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
   btn.addEventListener("click", () => setLanguage(btn.dataset.lang));
 });
 
-// Chapter lock — frame each page in the center of the screen
-function replayChapter(el) {
-  if (!el) return;
-  el.classList.remove("in-view");
-  void el.offsetWidth;
-  el.classList.add("seen", "in-view");
-}
-
-function lockToChapter(target, instant = false) {
-  if (!target) return;
-  const alreadyHere = target.classList.contains("in-view");
-  const top = Math.round(window.scrollY + target.getBoundingClientRect().top);
-  window.scrollTo({ top, behavior: instant ? "auto" : "smooth" });
-  if (alreadyHere || instant) replayChapter(target);
-}
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", (e) => {
     const href = anchor.getAttribute("href");
@@ -371,25 +368,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const target = document.querySelector(href);
     if (!target) return;
     e.preventDefault();
-    lockToChapter(target);
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
     history.replaceState(null, "", href);
   });
 });
-
-// Scroll reveal
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
-);
-
-document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
 
 // ─── Projects ────────────────────────────────────────────────────
 const allProjects = [
@@ -475,6 +457,7 @@ const allProjects = [
     repo: "worktrack",
     lang: "TypeScript",
     accent: "blue",
+    stack: ["TypeScript", "Task Tracking", "Web App"],
   },
   {
     id: "user-mgmt",
@@ -530,6 +513,7 @@ const allProjects = [
     image: "/file/Project/Web Profile.png",
     lang: "HTML · CSS",
     accent: "slate",
+    stack: ["HTML", "CSS", "JavaScript", "Firebase"],
   },
   {
     id: "system-test",
@@ -635,7 +619,7 @@ function buildProjectImage(project) {
   return imageWrap;
 }
 
-function buildProjectCard(project, index, extraClass = "") {
+function buildProjectCard(project, index = 0, extraClass = "") {
   const card = document.createElement("article");
   card.className = `project-card${extraClass ? ` ${extraClass}` : ""}`;
   card.dataset.projectId = project.id;
@@ -647,7 +631,6 @@ function buildProjectCard(project, index, extraClass = "") {
   body.innerHTML = `
     <span class="project-tag">${getProjectTag(project)}</span>
     <h3>${project.title}</h3>
-    <span class="project-lang">${project.lang}</span>
     <p class="project-desc">${getProjectDesc(project)}</p>
     <div class="project-links"></div>
   `;
@@ -661,104 +644,29 @@ function buildProjectCard(project, index, extraClass = "") {
   }
 
   card.appendChild(body);
-  card.setAttribute("aria-label", `${project.title} — slide ${index + 1}`);
   return card;
 }
 
 function buildFeaturedCard(project) {
-  const card = buildProjectCard(project, 0, "featured-card");
-  const body = card.querySelector(".project-body");
-  const langEl = body.querySelector(".project-lang");
-  if (langEl) langEl.remove();
-
-  if (project.stack?.length) {
-    const stackWrap = document.createElement("div");
-    stackWrap.className = "project-stack";
-    stackWrap.innerHTML = project.stack.map((item) => `<span>${item}</span>`).join("");
-    body.insertBefore(stackWrap, body.querySelector(".project-desc"));
-  }
-
-  return card;
+  return buildProjectCard(project, 0, "featured-card");
 }
 
-function renderFeaturedCarousel() {
-  const track = document.getElementById("featured-track");
-  if (!track) return;
-  track.innerHTML = "";
-
-  for (let set = 0; set < 2; set += 1) {
-    featuredProjects.forEach((project) => {
-      const card = buildFeaturedCard(project);
-      if (set === 1) card.setAttribute("aria-hidden", "true");
-      track.appendChild(card);
-    });
-  }
+function renderFeaturedGrid() {
+  const grid = document.getElementById("featured-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  featuredProjects.forEach((project, index) => {
+    grid.appendChild(buildFeaturedCard(project, index));
+  });
 }
 
-function initInfiniteCarousel({ viewport, track, prevBtn, nextBtn, speed = 0.45 }) {
-  let position = 0;
-  let halfWidth = 0;
-  let paused = false;
-  let rafId = null;
-
-  function measure() {
-    halfWidth = track.scrollWidth / 2;
-  }
-
-  function getStep() {
-    const card = track.querySelector(".project-card");
-    if (!card) return 340;
-    const gap = parseFloat(getComputedStyle(track).gap) || 20;
-    return card.offsetWidth + gap;
-  }
-
-  function wrapPosition() {
-    if (halfWidth <= 0) return;
-    while (position <= -halfWidth) position += halfWidth;
-    while (position > 0) position -= halfWidth;
-  }
-
-  function applyTransform() {
-    wrapPosition();
-    track.style.transform = `translateX(${position}px)`;
-  }
-
-  function tick() {
-    if (!paused && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      position -= speed;
-      applyTransform();
-    }
-    rafId = requestAnimationFrame(tick);
-  }
-
-  function nudge(direction) {
-    position += direction * getStep();
-    applyTransform();
-  }
-
-  prevBtn?.addEventListener("click", () => nudge(1));
-  nextBtn?.addEventListener("click", () => nudge(-1));
-
-  viewport?.addEventListener("mouseenter", () => {
-    paused = true;
+function renderMoreGrid() {
+  const grid = document.getElementById("more-grid");
+  if (!grid) return;
+  grid.innerHTML = "";
+  marqueeProjects.forEach((project, index) => {
+    grid.appendChild(buildProjectCard(project, index));
   });
-  viewport?.addEventListener("mouseleave", () => {
-    paused = false;
-  });
-  viewport?.addEventListener("touchstart", () => {
-    paused = true;
-  }, { passive: true });
-  viewport?.addEventListener("touchend", () => {
-    paused = false;
-  }, { passive: true });
-
-  window.addEventListener("resize", measure);
-
-  measure();
-  if (rafId) cancelAnimationFrame(rafId);
-  rafId = requestAnimationFrame(tick);
-
-  return { remeasure: measure };
 }
 
 function updateProjectDescriptions() {
@@ -772,55 +680,30 @@ function updateProjectDescriptions() {
   });
 }
 
-const featuredTrack = document.getElementById("featured-track");
-const featuredViewport = document.getElementById("featured-viewport");
-const projectTrack = document.getElementById("project-track");
-const projectViewport = document.getElementById("project-viewport");
-
-function renderMarquee() {
-  if (!projectTrack) return;
-  projectTrack.innerHTML = "";
-
-  for (let set = 0; set < 2; set += 1) {
-    marqueeProjects.forEach((project, index) => {
-      const card = buildProjectCard(project, index);
-      if (set === 1) card.setAttribute("aria-hidden", "true");
-      projectTrack.appendChild(card);
-    });
+function initReveal() {
+  const nodes = document.querySelectorAll(
+    ".section-head, .project-card, .timeline-item, .skill-group, .cert-card, .about-facts article, .education-panel"
+  );
+  if (!nodes.length) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    nodes.forEach((el) => el.classList.add("is-visible"));
+    return;
   }
+  nodes.forEach((el) => el.classList.add("reveal"));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+  );
+  nodes.forEach((el) => observer.observe(el));
 }
 
-renderFeaturedCarousel();
-renderMarquee();
-
-const featuredCarousel = initInfiniteCarousel({
-  viewport: featuredViewport,
-  track: featuredTrack,
-  prevBtn: document.getElementById("featured-prev"),
-  nextBtn: document.getElementById("featured-next"),
-  speed: 0.4,
-});
-
-const marqueeCarousel = initInfiniteCarousel({
-  viewport: projectViewport,
-  track: projectTrack,
-  prevBtn: document.getElementById("marquee-prev"),
-  nextBtn: document.getElementById("marquee-next"),
-  speed: 0.55,
-});
-
-window.addEventListener("load", () => {
-  featuredCarousel?.remeasure();
-  marqueeCarousel?.remeasure();
-});
-setTimeout(() => {
-  featuredCarousel?.remeasure();
-  marqueeCarousel?.remeasure();
-}, 1500);
-
-initLinkedIn();
-
-let activeChapter = "home";
+let activeSection = "home";
 
 function t(key) {
   return translations[currentLang]?.[key] || "";
@@ -830,11 +713,13 @@ function setGuideChat(open) {
   const guide = document.getElementById("story-guide");
   const toggle = document.getElementById("guide-toggle");
   const avatar = document.getElementById("guide-avatar");
+  const line = document.getElementById("guide-line");
   if (!guide || !toggle || !avatar) return;
   guide.classList.toggle("is-closed", !open);
   toggle.setAttribute("aria-expanded", open ? "true" : "false");
   toggle.setAttribute("aria-label", t(open ? "guide.toggleClose" : "guide.toggleOpen"));
   avatar.src = open ? avatar.dataset.open : avatar.dataset.closed;
+  if (line) line.setAttribute("aria-live", open ? "polite" : "off");
   localStorage.setItem("pk-guide-open", open ? "1" : "0");
 }
 
@@ -849,72 +734,45 @@ function initGuideToggle() {
   });
 }
 
-function setGuide(chapter) {
-  if (!chapter) return;
-  activeChapter = chapter;
+function setGuide(section) {
+  if (!section) return;
+  activeSection = section;
   const line = document.getElementById("guide-line");
-  const key = `guide.${chapter}`;
-  if (line && t(key)) line.textContent = t(key);
-
-  document.querySelectorAll(".chapter-rail a").forEach((link) => {
-    link.classList.toggle("is-active", link.dataset.chapter === chapter);
-  });
-  document.querySelectorAll(".nav-links a").forEach((link) => {
-    const href = link.getAttribute("href") || "";
-    link.classList.toggle("is-active", href === `#${chapter}` || (chapter === "home" && href === "#home"));
-  });
-}
-
-function finishIntro() {
-  document.documentElement.classList.add("intro-done");
-  document.body.classList.add("intro-done");
-  sessionStorage.setItem("pk-intro-done", "1");
-  document.body.style.overflow = "";
-  const hash = location.hash.slice(1);
-  const target = document.getElementById(hash) || document.getElementById("home");
-  lockToChapter(target, true);
-}
-
-function initCinematic() {
-  const cinematic = document.getElementById("cinematic");
-  const skip = document.getElementById("skip-intro");
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (!cinematic) return;
-  if (document.documentElement.classList.contains("intro-done") || reduce) {
-    finishIntro();
-    return;
+  const guide = document.getElementById("story-guide");
+  const key = `guide.${section}`;
+  const open = guide && !guide.classList.contains("is-closed");
+  if (line) {
+    line.setAttribute("aria-live", open ? "polite" : "off");
+    if (t(key)) line.textContent = t(key);
   }
-  document.body.style.overflow = "hidden";
-  skip?.addEventListener("click", finishIntro);
-  window.setTimeout(finishIntro, 7800);
 }
 
-function initChapters() {
-  const spreads = document.querySelectorAll(".spread[data-chapter]");
-  if (!spreads.length) return;
+function initNavHighlight() {
+  const sections = document.querySelectorAll("main section[id]");
+  if (!sections.length) return;
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          replayChapter(entry.target);
-        } else {
-          entry.target.classList.remove("in-view");
-          entry.target.classList.add("seen");
-        }
-      });
       const visible = entries
         .filter((entry) => entry.isIntersecting)
         .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
       if (!visible) return;
-      setGuide(visible.target.dataset.chapter);
+      const id = visible.target.id;
+      setGuide(id);
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        const href = link.getAttribute("href") || "";
+        link.classList.toggle("is-active", href === `#${id}`);
+      });
     },
-    { threshold: 0.45 }
+    { threshold: 0.35 }
   );
-  spreads.forEach((el) => observer.observe(el));
+  sections.forEach((section) => observer.observe(section));
 }
 
-initCinematic();
-initChapters();
+renderFeaturedGrid();
+renderMoreGrid();
+initLinkedIn();
+initReveal();
+initNavHighlight();
 initGuideToggle();
 
 // Init
